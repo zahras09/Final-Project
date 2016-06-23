@@ -1,3 +1,4 @@
+
 from SmartThing import SmartThing
 
 # create class
@@ -15,7 +16,7 @@ class SmartHome(object):
 	def set_status(self, category, name, status):
 		self.all_things[category].set_status(name, status)
 
-# more general, bc each smart thing can print of specific item or all.
+# more general, bc each smart thing can print specific item or all.
 	def get_status(self, category, name):
 		if name == "all":
 			self.all_things[category].get_all_status()
@@ -37,9 +38,9 @@ class SmartHome(object):
 	# add security (camera 1, camera 2)
 	# add appliance 
 
-	# get status method takes in category, prints status of everything
+	
 
-	# how many lights are on? would have to modify SmartThing i think
+	# how many lights are on? would have to modify SmartThing 
 
 # home = SmartHome()
 # home.all_things["lights"].set_status("bedroom", True)
